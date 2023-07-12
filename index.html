@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet">
+  <title>Landing page</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo">
+      logo
+    </div>
+    <div class="abt">
+      <h3 class="it">Home</h3>
+      <h3 class="it">About</h3>
+      <h3 class="it">Contact</h3>
+      <h3 class="it">Login</h3>
+    </div>
+  </div>
+  <div class="body">
+    <div class="pdtdes">
+      <div class="slide">
+        <img class="mySlides" src="images/download.jpg">
+        <img class="mySlides" src="images/images (1).jpg">
+        <img class="mySlides" src="images/images (2).jpg">
+        <img class="mySlides" src="images/images.jpg">
+        <img class="mySlides" src="images/images (3).jpg">
+      </div>
+      <div class="sentence">
+        <p class="heading">Description</p>
+        <p class="innerbody">
+          Here You can find Amazing shoes from kids to Elders and all types of wereable shoes and footwears
+        </p>
+        <p class="innerbody">
+          Press the button for more information
+        </p>
+        <br>
+        <button class="button2" type="button">Discover more</button>
+      </div>
+    </div>
+  </div>
+  <div class="aboutus">
+    <div class="abtimg">
+      <img class="myslides2" src="images/92cd781f91e6ca86f3aa3fa0fdfba89c23857a5c_original.jpeg">
+    </div>
+    <div class="desabt">
+      <p class="maintext">
+        About Us
+      </p>
+      <div class="text1">
+        <p>
+          Trendy shoes for all Ages for both men and women.We are about Great Quality and Customer service.We have
+          currently achieved 5k+ customers.
+          It is great to have you here.
+        </p>
+      </div>
+      <div class="text2">
+        <p>
+          Our Footwear collections is growing daily.Check for constant updates.
+          Enjoy your day
+        </p>
+        <br>
+        <button class="button3" type="button">About Us</button>
+      </div>
+    </div>
+  </div>
+  <div class="topcategoriues">
+    <div class="top1">
+      <p>Top categories</p>
+    </div>
+
+    <div class="buyingsession1">
+      <div class="buyingsession2">
+        <div class="buy">
+          <div class="item1">
+            <img class="myslides1" src="images/151324261-111789323-1665756202.jpg">
+          </div>
+          <div class="desc_in_box">
+            <div class="item2">
+              <h2 class="buytext">Black Casual Shoes</h2>
+              <h3 class="buytext">$180</h3>
+            </div>
+            <div class="item3">
+              <div class="item4">
+                <h3>Add to cart</h3>
+              </div>
+              <div class="item4">
+                <h3>Details</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buy">
+          <div class="item1">
+            <img class="myslides1" src="images/images (6).jpg">
+          </div>
+          <div class="desc_in_box">
+            <div class="item2">
+              <h2 class="buytext">Black with Green Sport Shoes</h2>
+              <h3 class="buytext">$140</h3>
+            </div>
+            <div class="item3">
+              <div class="item4">
+                <h3>Add to cart</h3>
+              </div>
+              <div class="item4">
+                <h3>Details</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buy">
+          <div class="item1">
+            <img class="myslides1" src="images/images (4).jpg">
+          </div>
+          <div class="desc_in_box">
+            <div class="item2">
+              <h2 class="buytext">Greenish Blue Crocs</h2>
+              <h3 class="buytext">$100</h3>
+            </div>
+            <div class="item3">
+              <div class="item4">
+                <h3>Add to cart</h3>
+              </div>
+              <div class="item4">
+                <h3>Details</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="Contact">
+    <div class="top1">
+      <p>Contact</p>
+    </div>
+    <div class="cont2">
+      Contact Us Throught
+      <div class="cont3">
+        <div class="email">harishkailashad503@gmail.com</div>
+        <div class="phoneno">96*****413</div>
+        <br>
+        For more Information Click the button
+      </div>
+      <div>
+        <button class="button3" type="button">Contact</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
+<script>
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) { slideIndex = 1 }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+  }
+
+</script>
